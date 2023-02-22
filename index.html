@@ -30,12 +30,39 @@
     </script>
 </head>
 <body>
+    <audio id="audio" src="musik.mp3"></audio>
+    <div
+        style="height: 100vh; width: 100vw; background-color: #cb8882;z-index: 99999999999999999999999999;position: fixed;"
+        id="layer"
+    >
+        <div style="text-align: center;padding-top: 270px; color: white;font-size: 36px;">
+            <h2
+                id="attendance"
+                style="color: white;font-size: 30px;"
+            >
+            </h2>
+        </div>
+        <div
+            style="text-align: center;"
+        >
+            <button
+                style="background-color: white; border-radius: 10px; margin-top: 20px; padding:10px 50px; color:black; cursor: pointer;"
+                onclick="openTicket()"
+            >
+                Buka
+            </button>
+        </div>
+    </div>
     <!-- Preloader -->
     <div class="preloader">
         <div class="lds-heart">
             <div></div>
         </div>
     </div>
+
+
+
+
     <!-- Progress-wrapp scroll-button -->
     <div class="progress-wrap">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
@@ -325,5 +352,37 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/YouTubePopUp.js"></script>
     <script src="js/template.js"></script>
+
+    <script>
+        var attendance = window.location.search.substr(1)
+        attendance = attendance.replace("-", " & ");
+
+        document.getElementById("attendance").innerText = attendance
+
+
+        function fade(element) {
+            var op = 1;  // initial opacity
+            var timer = setInterval(function () {
+                if (op <= 0.1){
+                    clearInterval(timer);
+                    element.style.display = 'none';
+                }
+                element.style.opacity = op;
+                element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+                op -= op * 0.1;
+            }, 50);
+        }
+
+        function play() {
+            var audio = document.getElementById("audio");
+            audio.play();
+          }
+
+        function openTicket(){
+            var element = document.getElementById("layer")
+            fade(element)
+            play()
+        }
+    </script>
 </body>
 </html>
