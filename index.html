@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/themify-icons.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/YouTubePopUp.css">
-    <link rel="stylesheet" href="css/vegas.slider.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
@@ -43,57 +43,49 @@
         </svg>
     </div>
     <!-- Navbar -->
-	<nav class="navbar navbar-expand-lg">
-		<div class="container">
-			<!-- Logo -->
-			<div class="logo-wrapper navbar-brand valign">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-wrapper navbar-brand valign">
                 <div class="logo">
                     <!-- <img src="images/logo-light.png" class="logo-img" alt=""> -->
-                    <a href="index.html"><h2>Mary &amp; Brian</h2></a>
+                    <a href="index.html"><h2>Galang &amp; Anis</h2></a>
                 </div>
             </div>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"><i class="ti-line-double"></i></span> </button>
-			<!-- Navbar links -->
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a class="nav-link active" href="#" data-scroll-nav="0">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="1">Couple</a></li>
-					<li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="2">Story</a></li>
-					<li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="3">Friends</a></li>
-					<li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="4">Events</a></li>
-					<li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="5">Gallery</a></li>
-					<!-- Dropdown Menu example 
-                    <li class="nav-item dropdown"> <span class="nav-link"> Dropdown <i class="ti-angle-down"></i></span>
-                        <ul class="dropdown-menu last">
-                            <li class="dropdown-item"><a href="#">Dropdown 2</a></li>
-                            <li class="dropdown-item"><a href="#">Dropdown 2</a></li>
-                            <li class="dropdown-item"><span>Dropdown 2 <i class="ti-angle-right"></i></span>
-                                <ul class="sub-menu last">
-                                    <li class="dropdown-item"><a href="#">Dropdown 3</a></li>
-                                    <li class="dropdown-item"><a href="#">Dropdown 3</a></li>
-                                 </ul>
-                             </li>
-                        </ul>
-                    </li>
-                    -->
-					<li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="6">When & Where</a></li>
-					<li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="7">R.S.V.P</a></li>
-					<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-    <!-- Slider section -->
-    <div id="home" class="hero-section" data-overlay-dark="2" data-scroll-index="0">
-        <div class="container hero-inner h-100">
-            <div class="row h-100">
-                <div class="col-md-12 text-center">
-                    <h2>Mary & Brian</h2>
-                    <h6>24 December, 2022 – New York</h6>
-                </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"><i class="ti-line-double"></i></span> </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#" data-scroll-nav="0">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="1">Couple</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="2">Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="4">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="6">When & Where</a></li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
+    <!-- Slider section -->
+    <header id="home" data-scroll-index="0">
+        <div class="mary-hero js-fullheight">
+            <div class="flexslider js-fullheight">
+                <ul class="slides" style="padding: 0;">
+                    <li class="bg-fixed" style="background-image: url(images/1.png);" data-overlay-dark="2">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 text-center js-fullheight slider-text">
+                                    <div class="slider-text-inner mx-auto">
+                                        <h2>Galang & Anis</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <!-- Welcome section -->
     <div id="welcome" class="welcome section-padding">
         <div class="container">
@@ -102,7 +94,7 @@
                     <div class="welcome-mt">
                         <div class="welcome-image-wrapper">
                             <div class="img">
-                                <a href="#" data-scroll-nav="1"><img src="images/couple.png" alt=""></a>
+                                <a href="#" data-scroll-nav="1"><img src="images/4.jpg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -110,7 +102,11 @@
                 <div class="col-md-8 offset-md-2 text-center">
                     <h6 class="section-subtitle">Hello & Welcome</h6>
                     <h2 class="section-title">We're getting married!</h2>
-                    <p>Today and always, beyond tomorrow, I need you beside me, always as my best friend, lover and forever soul mate. Curabit aliquet orci elit genes tristique lorem commodo vitae. Tuliaum tincidunt nete sede gravida alisuan neque libero hendrerit magnation sit amet mollis lacus ithe maurise. Dunya erat couple wedding eda the semper. Event elit miss eget the solin miss citudino phasellus rutrum in the lacusi events vestibulum elen ornare drana company tortori eget the solin miss citudino sellus rutrum in lacus miss semper.</p>
+                    <p>
+                        Dengan mengucapkan syukur yang tak terhingga atas berkah dan karunia Allah SWT
+                        kami bermaksud mengundang bapak/ibu/ saudara/i untuk memberikan doa dan restu dalam
+                        Ikatan Pernikahan Kami
+                    </p>
                 </div>
             </div>
         </div>
@@ -128,15 +124,8 @@
                         <div class="img"> <img src="images/bride.png" alt=""> </div>
                         <div class="info valign">
                             <div class="full-width">
-                                <h6>Mary Brown</h6> <span>The Bride</span>
-                                <p>Mary fringilla dui at elit finibus viverra nec alan seda couple the miss druane sema the wedding intono miss sollicitudin non the fermen.</p>
-                                <div class="social">
-                                    <div class="full-width">
-                                        <a href="#0" class="icon"> <i class="ti-facebook"></i> </a>
-                                        <a href="#0" class="icon"> <i class="ti-twitter"></i> </a>
-                                        <a href="#0" class="icon"> <i class="ti-instagram"></i> </a>
-                                    </div>
-                                </div>
+                                <h6>Anis Destiana, A.Md.</h6> <span>The Bride</span>
+                                <p>Anak Keempat dari lima bersaudara. Bapak Azhari Dinah & Ibu Yuminawati</p>
                             </div>
                         </div>
                     </div>
@@ -146,15 +135,8 @@
                         <div class="img"> <img src="images/groom.png" alt=""> </div>
                         <div class="info valign">
                             <div class="full-width">
-                                <h6>Brian Martin</h6> <span>The Groom</span>
-                                <p>Mary fringilla dui at elit finibus viverra nec alan seda couple the miss druane sema the wedding intono miss sollicitudin non the fermen.</p>
-                                <div class="social">
-                                    <div class="full-width">
-                                        <a href="#0" class="icon"> <i class="ti-facebook"></i> </a>
-                                        <a href="#0" class="icon"> <i class="ti-twitter"></i> </a>
-                                        <a href="#0" class="icon"> <i class="ti-instagram"></i> </a>
-                                    </div>
-                                </div>
+                                <h6>Galang Pratama, S.Kom</h6> <span>The Groom</span>
+                                <p>Anak Pertama dari lima bersaudara. Bapak Agus Yamin M. Ali & Ibu Kartila</p>
                             </div>
                         </div>
                     </div>
@@ -163,7 +145,7 @@
         </div>
     </div>
     <!-- Countdown section -->
-    <div id="countdown" class="section-padding bg-img bg-fixed" data-overlay-dark="1" data-background="images/banner/1.jpg">
+    <div id="countdown" class="section-padding bg-img bg-fixed" data-overlay-dark="1" data-background="images/2.png">
         <div class="container">
             <div class="row">
                 <div class="section-head col-md-12">
@@ -188,7 +170,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center animate-box" data-animate-effect="fadeInUp">
-                    <h6 class="section-subtitle">Mary & Brian</h6>
+                    <h6 class="section-subtitle">Galang & Anis</h6>
                     <h2 class="section-title">Our Love Story</h2>
                 </div>
             </div>
@@ -196,171 +178,27 @@
                 <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
                     <div class="owl-carousel owl-theme">
                         <div class="story left">
-                            <figure><img src="images/story/4.jpg" alt="" class="img-fluid"></figure>
+                            <figure><img src="images/6.jpg" alt="" class="img-fluid"></figure>
                             <div class="caption">
-                                <h6>July 20, 2015</h6>
                                 <h4>First time we meet</h4>
-                                <p>First time we meet viverra tristique duis vitae diam the nesumen nivamus aestan ateuene artines finibus. Nedana setlie the love thermen inilla duimane elit finibus nec a lacus durana meeta nonsaiere viventa miss the fermen.</p>
+                                <p>Jika memang benar kisah cinta anak SMA adalah kisah terindah, maka kami adalah salah satu yang menjalani kisah tersebut. Bangku sekolah itu saksi biksu dari rasa ini hadir. 2014 sempat terpisah karena study yang berbeda fakultas membuat kami terpaksa berjauhan dengan rasa yang tidak menentu</p>
                             </div>
                         </div>
                         <div class="story left">
-                            <figure><img src="images/story/2.jpg" alt="" class="img-fluid"></figure>
+                            <figure><img src="images/7.jpg" alt="" class="img-fluid"></figure>
                             <div class="caption">
-                                <h6>May 20, 2016</h6>
                                 <h4>We fall in love each other</h4>
-                                <p>First time we meet viverra tristique duis vitae diam the nesumen nivamus aestan ateuene artines finibus. Nedana setlie the love thermen inilla duimane elit finibus nec a lacus durana meeta nonsaiere viventa miss the fermen.</p>
+                                <p>Dengan izin Allah 2015 kami bertemu lagi dengan rasa yang sama hingga sekarang menjalin kasih hingga delapan tahun lamanya, hingga akhirnya kami sama sama saling berkomitmen untuk menutup kisah perjalanan kami dengan membuka cerita baru sebagai pasangan suami istri ditahun 2023.</p>
                             </div>
                         </div>
                         <div class="story left">
-                            <figure><img src="images/story/1.jpg" alt="" class="img-fluid"></figure>
+                            <figure><img src="images/8.jpg" alt="" class="img-fluid"></figure>
                             <div class="caption">
-                                <h6>June 20, 2020</h6>
                                 <h4>Marriage proposal</h4>
-                                <p>First time we meet viverra tristique duis vitae diam the nesumen nivamus aestan ateuene artines finibus. Nedana setlie the love thermen inilla duimane elit finibus nec a lacus durana meeta nonsaiere viventa miss the fermen.</p>
-                            </div>
-                        </div>
-                        <div class="story left">
-                            <figure><img src="images/story/3.jpg" alt="" class="img-fluid"></figure>
-                            <div class="caption">
-                                <h6>December 24, 2022</h6>
-                                <h4>The wedding day</h4>
-                                <p>First time we meet viverra tristique duis vitae diam the nesumen nivamus aestan ateuene artines finibus. Nedana setlie the love thermen inilla duimane elit finibus nec a lacus durana meeta nonsaiere viventa miss the fermen.</p>
+                                <p>Perjalanan panjang yang akan kami mulai dan sangat kami impikan.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Events section -->
-    <div id="events" class="events section-padding" data-scroll-index="4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center animate-box" data-animate-effect="fadeInUp">
-                    <h6 class="section-subtitle">Organization</h6>
-                    <h2 class="section-title">Wedding Events</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
-                    <div class="owl-carousel owl-theme">
-                        <div class="events">
-                            <figure><img src="images/event/1.jpg" alt="" class="img-fluid"></figure>
-                            <div class="caption">
-                                <h6><sup>1</sup>/<sub style="margin-right:5px">4</sub> Information</h6>
-                                <h4>Wedding Ceremony</h4>
-                                <p>Wedding ceremony the viverra tristique duis vitaenion diamnen numen nivamus aestan ateuene artines finibus. Nedana setlie the love thermen inilla duimane elit finibus nec a lacus durana nonsaiere viventa miss the fermen.</p>
-                            </div>
-                        </div>
-                        <div class="events">
-                            <figure><img src="images/event/2.jpg" alt="" class="img-fluid"></figure>
-                            <div class="caption">
-                                <h6><sup>2</sup>/<sub style="margin-right:10px">4</sub> Information</h6>
-                                <h4>Lunch Time</h4>
-                                <p>Wedding ceremony the viverra tristique duis vitaenion diamnen numen nivamus aestan ateuene artines finibus. Nedana setlie the love thermen inilla duimane elit finibus nec a lacus durana nonsaiere viventa miss the fermen.</p>
-                            </div>
-                        </div>
-                        <div class="events">
-                            <figure><img src="images/event/3.jpg" alt="" class="img-fluid"></figure>
-                            <div class="caption">
-                                <h6><sup>3</sup>/<sub style="margin-right:10px">4</sub> Information</h6>
-                                <h4>Wedding Party</h4>
-                                <p>Wedding ceremony the viverra tristique duis vitaenion diamnen numen nivamus aestan ateuene artines finibus. Nedana setlie the love thermen inilla duimane elit finibus nec a lacus durana nonsaiere viventa miss the fermen.</p>
-                            </div>
-                        </div>
-                        <div class="events">
-                            <figure><img src="images/event/4.jpg" alt="" class="img-fluid"></figure>
-                            <div class="caption">
-                                <h6><sup>4</sup>/<sub style="margin-right:10px">4</sub> Information</h6>
-                                <h4>Cake Cutting</h4>
-                                <p>Wedding ceremony the viverra tristique duis vitaenion diamnen numen nivamus aestan ateuene artines finibus. Nedana setlie the love thermen inilla duimane elit finibus nec a lacus durana nonsaiere viventa miss the fermen.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Gallery section -->
-    <div id="gallery" class="section-padding bg-cream" data-scroll-index="5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h6 class="section-subtitle">Our Gallery</h6>
-                    <h2 class="section-title">Our Memories</h2>
-                </div>
-            </div>
-            <div class="row">
-                <ul class="col-md-12 text-center list-unstyled list-inline gallery-menu" id="gallery-filter">
-                    <li class="list-inline-item"><a class="active" data-filter="*">All</a></li>
-                    <li class="list-inline-item"><a class="" data-filter=".ceremony">Ceremony</a></li>
-                    <li class="list-inline-item"><a class="" data-filter=".party">Party</a></li>
-                </ul>
-            </div>
-            <div class="row gallery-filter">
-                <div class="col-md-4 gallery-item ceremony">
-                    <a href="images/gallery/1.jpg" class="img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="images/gallery/1.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                                <h4 class="mb-0">Wedding Ceremony</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 gallery-item party">
-                    <a href="images/gallery/2.jpg" class="img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="images/gallery/2.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                                <h4 class="mb-0">Wedding Party</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 gallery-item ceremony">
-                    <a href="images/gallery/3.jpg" class="img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="images/gallery/3.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                                <h4 class="mb-0">Wedding Ceremony</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 gallery-item party">
-                    <a href="images/gallery/4.jpg" class="img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="images/gallery/4.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                                <h4 class="mb-0">Wedding Party</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 gallery-item ceremony">
-                    <a href="images/gallery/5.jpg" class="img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="images/gallery/5.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                                <h4 class="mb-0">Wedding Ceremony</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Banner section -->
-    <div id="banner" class="section-padding bg-img bg-fixed" data-overlay-dark="1" data-background="images/banner/1.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="section-head col-md-12">
-                    <h6>Save the date</h6>
-                    <h2>Looking forward to see you!</h2>
-                    <h1>24.11.2022</h1>
-                    <h1><i class="ti-heart"></i></h1>
                 </div>
             </div>
         </div>
@@ -383,27 +221,24 @@
                 <div class="col-md-6 valign animate-box" data-animate-effect="fadeInRight">
                     <div class="content">
                         <div class="date">
-                            <h3>24</h3>
-                            <h6>Dec 2022</h6>
+                            <h3>3</h3>
+                            <h6>Maret 2023</h6>
                         </div>
                         <div class="cont">
                             <div class="info">
                                 <h6>Are you ready?</h6>
                             </div>
-                            <h4>Wedding Ceremony</h4>
+                            <h4>Akad Nikah</h4>
                             <ul class="list-unstyled cont-list">
                                 <li>
-                                    <div class="icon"> <span class="ti-location-pin"></span> </div>
                                     <div class="text">
-                                        <p>175 Broadway, Brooklyn NY
-                                            <br>New York 11244, USA
+                                        <p>Kediaman mempelai perempuan perumahan bukit sejahtera blok AC 12 RT 068 RW 021 Palembang
                                         </p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="icon"> <span class="ti-time"></span> </div>
                                     <div class="text">
-                                        <p>12:00am – 13:00pm</p>
+                                        <p>08:00am – Selesai</p>
                                     </div>
                                 </li>
                             </ul>
@@ -415,8 +250,8 @@
                 <div class="col-md-6 order2 valign animate-box" data-animate-effect="fadeInLeft">
                     <div class="content">
                         <div class="date">
-                            <h3>24</h3>
-                            <h6>Dec 2022</h6>
+                            <h3>5</h3>
+                            <h6>Maret 2022</h6>
                         </div>
                         <div class="cont">
                             <div class="info">
@@ -425,17 +260,15 @@
                             <h4>Wedding Party</h4>
                             <ul class="list-unstyled cont-list">
                                 <li>
-                                    <div class="icon"> <span class="ti-location-pin"></span> </div>
                                     <div class="text">
-                                        <p>Nusret Restaurant, 149 Broadway
-                                            <br>Brooklyn, New York, USA
+                                        <p>
+                                            Kediaman mempelai pria Jala Bukit Baru 2 No.26A RT.01 RW.06 Palembang 
                                         </p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="icon"> <span class="ti-time"></span> </div>
                                     <div class="text">
-                                        <p>14:00pm</p>
+                                        <p>10:00am - Selesai</p>
                                     </div>
                                 </li>
                             </ul>
@@ -457,8 +290,7 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="section-padding">
-                            <h2><span>Mary <small>&amp;</small> Brian</span></h2>
-                            <h6>24 December 2022, NEW YORK</h6>
+                            <h2><span>Galang <small>&amp;</small> Anis</span></h2>
                         </div>
                     </div>
                 </div>
@@ -478,35 +310,13 @@
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/sticky-kit.min.js"></script>
     <script src="js/scrollIt.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/isotope.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/YouTubePopUp.js"></script>
-    <script src="js/vegas.slider.min.js"></script>
     <script src="js/template.js"></script>
-    <!-- Vegas Background Slideshow (vegas.slider kenburns) -->
-    <script>
-        $(document).ready(function() {
-            $('#home').vegas({
-                slides: [{
-                    src: "images/slider/1.jpg"
-                }, {
-                    src: "images/slider/2.jpg"
-                }, {
-                    src: "images/slider/3.jpg"
-                }, {
-                    src: "images/slider/4.jpg"
-                }],
-                overlay: true,
-                transition: 'fade2',
-                animation: 'kenburnsDownLeft',
-                transitionDuration: 1000,
-                delay: 10000,
-                animationDuration: 10000
-            });
-        });
-    </script>
 </body>
 </html>
