@@ -2271,7 +2271,7 @@ overflow: hidden !important;
     -ms-transform: translateY(0);
     transform: translateY(0);
 }
-.progress-wrap::after {
+/* .progress-wrap::after {
     position: absolute;
     font-family: 'themify';
     content: '\e627';
@@ -2290,8 +2290,8 @@ overflow: hidden !important;
     -webkit-transition: all 400ms linear;
     -o-transition: all 400ms linear;
     transition: all 400ms linear;
-}
-.progress-wrap svg path {
+} */
+.progress-wrap svg.progress-circle path {
     fill: none;
 }
 .progress-wrap svg.progress-circle path {
@@ -2307,9 +2307,9 @@ overflow: hidden !important;
     -webkit-box-shadow: inset 0 0 0 1px rgba(130, 130, 130, 0.2);
     box-shadow: inset 0 0 0 1px rgba(130, 130, 130, 0.2);
 }
-.progress-wrap::after {
+/* .progress-wrap::after {
     color: #cb8882;
-}
+} */
 .progress-wrap svg.progress-circle path {
     stroke: #cb8882;
 }
@@ -2672,4 +2672,31 @@ overflow: hidden !important;
 [data-overlay-dark="10"]:before,
 [data-overlay-light="10"]:before {
     opacity: 1;
+}
+
+.gg-menu-right {
+    transform: scale(var(--ggs,1))
+}
+.gg-menu-right,
+.gg-menu-right::after,
+.gg-menu-right::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor
+}
+.gg-menu-right::after,
+.gg-menu-right::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: 0;
+    width: 10px
+}
+.gg-menu-right::after {
+    top: 6px;
+    width: 14px
 }
