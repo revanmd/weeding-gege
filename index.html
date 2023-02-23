@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Galang Anis Wedding </title>
+    <title>Galang & Anis Wedding </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Didact+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/themify-icons.css">
@@ -16,18 +17,6 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/YouTubePopUp.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-        <script src="js/respond.min.js"></script>
-    <![endif]-->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144098545-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-144098545-1');
-    </script>
 </head>
 <body>
     <audio id="audio" src="musik.mp3"></audio>
@@ -68,6 +57,7 @@
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
         </svg>
+        <svg width="100%" height="100%" viewBox="0 0 24 24" fill="#cb8882" xmlns="http://www.w3.org/2000/svg" style="position: absolute;left: 0; top: 0; color: #cb8882;"><path d="M17.6569 16.2427L19.0711 14.8285L12.0001 7.75739L4.92896 14.8285L6.34317 16.2427L12.0001 10.5858L17.6569 16.2427Z" fill="currentColor"/></svg>
     </div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
@@ -79,7 +69,7 @@
                     <a href="index.html"><h2>Galang &amp; Anis</h2></a>
                 </div>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"><i class="ti-line-double"></i></span> </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"><i class="gg-menu-right"></i></span> </button>
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
@@ -332,7 +322,8 @@
             <div class="sub-footer">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <p>Make with love. All right reserved.</p>
+                        <p class="mb-0">Made with love ❤️</p>
+                        <p>©️ 2023 All rights reserved.</p>
                     </div>
                 </div>
             </div>
@@ -357,7 +348,7 @@
         var attendance = window.location.search.substr(1)
         attendance = attendance.replace("-", " & ");
 
-        document.getElementById("attendance").innerText = attendance
+        document.getElementById("attendance").innerText = decodeURI(attendance);
 
 
         function fade(element) {
